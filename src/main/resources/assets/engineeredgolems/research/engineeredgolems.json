@@ -1,0 +1,33 @@
+{
+	"entries": [
+		{
+			"key": "RT_MATSTUDTREATEDWOOD",
+			"name": "research.RT_MATSTUDTREATEDWOOD.title",
+			"icons": [ "immersiveengineering:treated_wood" ],
+			"category": "ENGINEERED_GOLEMS", "location": [ 0, -1 ],
+			"parents": [ "MATSTUDWOOD", "MINDCLOCKWORK" ],
+			"meta": [ "ROUND", "HIDDEN" ],
+			"stages": [
+				{
+					"text": "research.RT_MATSTUDTREATEDWOOD.stage.1",
+					"required_research":["f_RTTREATED_WOOD"]
+        }
+			]
+		},
+		{
+			"key": "RT_MATSTUDSTEEL",
+			"name": "research.RT_MATSTUDSTEEL.title",
+			"icons": [ "immersiveengineering:storage:8" ],
+			"category": "ENGINEERED_GOLEMS", "location": [ 0, 1 ],
+			"parents": [ "MATSTUDIRON", "MINDCLOCKWORK" ],
+			"meta": [ "ROUND", "HIDDEN" ],
+			"stages": [
+				{
+					"text": "research.RT_MATSTUDSTEEL.stage.1",
+					"required_research":["f_RTSTEEL"]
+        }
+			]
+		}
+
+	]
+}
