@@ -107,7 +107,7 @@ public class CommonProxy {
 
         ScanningManager.addScannableThing(
                 new ScanBlockState(
-                        "f_RT_TREATED_WOOD",
+                        "f_EG_TREATED_WOOD",
                         IEContent.blockTreatedWood.getStateFromMeta(0),
                         false
                 )
@@ -115,7 +115,7 @@ public class CommonProxy {
         
         ScanningManager.addScannableThing(
                 new ScanItem(
-                        "f_RT_STEEL",
+                        "f_EG_STEEL",
                         new ItemStack(
                         		IEContent.blockStorage,
                                 1,
@@ -126,7 +126,7 @@ public class CommonProxy {
 
         ScanningManager.addScannableThing(
                 new ScanBlockState(
-                        "f_RT_STEEL",
+                        "f_EG_STEEL",
                         IEContent.blockStorage.getStateFromMeta(8),
                         false
                 )

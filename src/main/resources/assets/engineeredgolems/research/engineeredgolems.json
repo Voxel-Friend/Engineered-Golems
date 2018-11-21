@@ -9,14 +9,14 @@
 			"meta": [ "ROUND", "HIDDEN" ],
 			"stages": [
 				{
-					"text": "research.RT_MATSTUDTREATEDWOOD.stage.1",
+					"text": "research.EG_MATSTUDTREATEDWOOD.stage.1",
 					"required_research":["f_EG_TREATED_WOOD"]
         }
 			]
 		},
 		{
 			"key": "EG_MATSTUDSTEEL",
-			"name": "research.RT_MATSTUDSTEEL.title",
+			"name": "research.EG_MATSTUDSTEEL.title",
 			"icons": [ "immersiveengineering:textures/items/metal_plate_steel.png" ],
 			"category": "ENGINEERED_GOLEMS", "location": [ 1, 0 ],
 			"parents": [ "MATSTUDIRON", "MINDCLOCKWORK" ],
