@@ -80,7 +80,7 @@ public class CommonProxy {
                         ),
                         4934475,
                         16,
-                        10,
+                        12,
                         10,
                         new ItemStack(
                         		IEContent.itemMetal,
