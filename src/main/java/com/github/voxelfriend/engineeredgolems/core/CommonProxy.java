@@ -30,7 +30,7 @@ public class CommonProxy {
 	public void init(FMLInitializationEvent event) {
 		ResearchCategories.registerCategory("ENGINEERED_GOLEMS", "UNLOCKAUROMANCY",
 				new AspectList(),
-				new ResourceLocation("engineeredgolems", "textures/research/brewing_barrel.png"),
+				new ResourceLocation("engineeredgolems", "textures/research/steel_golem.png"),
 				new ResourceLocation("thaumcraft", "textures/gui/gui_research_back_2.jpg"),
                 new ResourceLocation("thaumcraft", "textures/gui/gui_research_back_over.png"));
 		

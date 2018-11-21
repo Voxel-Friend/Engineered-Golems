@@ -4,7 +4,7 @@
 			"key": "RT_MATSTUDTREATEDWOOD",
 			"name": "research.RT_MATSTUDTREATEDWOOD.title",
 			"icons": [ "immersiveengineering:treated_wood" ],
-			"category": "ENGINEERED_GOLEMS", "location": [ 0, -1 ],
+			"category": "ENGINEERED_GOLEMS", "location": [ -1, 0 ],
 			"parents": [ "MATSTUDWOOD", "MINDCLOCKWORK" ],
 			"meta": [ "ROUND", "HIDDEN" ],
 			"stages": [
@@ -17,8 +17,8 @@
 		{
 			"key": "RT_MATSTUDSTEEL",
 			"name": "research.RT_MATSTUDSTEEL.title",
-			"icons": [ "immersiveengineering:storage_steel" ],
-			"category": "ENGINEERED_GOLEMS", "location": [ 0, 1 ],
+			"icons": [ "immersiveengineering:textures/items/metal_plate_steel.png" ],
+			"category": "ENGINEERED_GOLEMS", "location": [ 1, 0 ],
 			"parents": [ "MATSTUDIRON", "MINDCLOCKWORK" ],
 			"meta": [ "ROUND", "HIDDEN" ],
 			"stages": [
