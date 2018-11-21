@@ -10,7 +10,7 @@
 			"stages": [
 				{
 					"text": "research.RT_MATSTUDTREATEDWOOD.stage.1",
-					"required_research":["f_RTTREATED_WOOD"]
+					"required_research":["f_RT_TREATED_WOOD"]
         }
 			]
 		},
@@ -24,7 +24,7 @@
 			"stages": [
 				{
 					"text": "research.RT_MATSTUDSTEEL.stage.1",
-					"required_research":["f_RTSTEEL"]
+					"required_research":["f_RT_STEEL"]
         }
 			]
 		}
