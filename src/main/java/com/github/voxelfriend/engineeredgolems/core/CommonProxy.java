@@ -107,7 +107,7 @@ public class CommonProxy {
 
         ScanningManager.addScannableThing(
                 new ScanBlockState(
-                        "f_RT_TREATEDWOOD",
+                        "f_RT_TREATED_WOOD",
                         IEContent.blockTreatedWood.getStateFromMeta(0),
                         false
                 )
