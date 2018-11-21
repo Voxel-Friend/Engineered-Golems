@@ -17,7 +17,7 @@
 		{
 			"key": "RT_MATSTUDSTEEL",
 			"name": "research.RT_MATSTUDSTEEL.title",
-			"icons": [ "immersiveengineering:storage:8" ],
+			"icons": [ "immersiveengineering:storage_steel" ],
 			"category": "ENGINEERED_GOLEMS", "location": [ 0, 1 ],
 			"parents": [ "MATSTUDIRON", "MINDCLOCKWORK" ],
 			"meta": [ "ROUND", "HIDDEN" ],

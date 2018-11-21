@@ -54,7 +54,7 @@ public class CommonProxy {
                                 "engineeredgolems",
                                 "textures/entity/mat_treated_wood.png"
                         ),
-                        11045996,
+                        6566425,
                         4,
                         1,
                         1,
@@ -66,7 +66,7 @@ public class CommonProxy {
                         new ItemStack(
                                 ItemsTC.mechanismSimple
                         ),
-                        new EnumGolemTrait[]{EnumGolemTrait.LIGHT, EnumGolemTrait.DEFT}
+                        new EnumGolemTrait[]{EnumGolemTrait.DEFT}
                         )
         );
     	
@@ -78,7 +78,7 @@ public class CommonProxy {
                                 "engineeredgolems",
                                 "textures/entity/mat_steel.png"
                         ),
-                        11045996,
+                        4934475,
                         16,
                         10,
                         10,
@@ -104,6 +104,14 @@ public class CommonProxy {
                         )
                 )
         );
+
+        ScanningManager.addScannableThing(
+                new ScanBlockState(
+                        "f_RT_TREATEDWOOD",
+                        IEContent.blockTreatedWood.getStateFromMeta(0),
+                        false
+                )
+        );
         
         ScanningManager.addScannableThing(
                 new ScanItem(
@@ -115,5 +123,13 @@ public class CommonProxy {
                         )
                 )
         );
+
+        ScanningManager.addScannableThing(
+                new ScanBlockState(
+                        "f_RT_STEEL",
+                        IEContent.blockStorage.getStateFromMeta(8),
+                        false
+                )
+);
     }
 }
