@@ -55,8 +55,8 @@ public class CommonProxy {
                                 "textures/entity/mat_treated_wood.png"
                         ),
                         6566425,
-                        4,
-                        1,
+                        6,
+                        2,
                         1,
                         new ItemStack(
                         		IEContent.blockTreatedWood,
