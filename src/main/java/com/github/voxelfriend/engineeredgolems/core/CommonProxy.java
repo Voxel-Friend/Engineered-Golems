@@ -49,7 +49,7 @@ public class CommonProxy {
     	GolemMaterial.register(
                 new GolemMaterial(
                         "TREATEDWOOD",
-                        new String[]{"RT_MATSTUDTREATEDWOOD"},
+                        new String[]{"EG_MATSTUDTREATEDWOOD"},
                         new ResourceLocation(
                                 "engineeredgolems",
                                 "textures/entity/mat_treated_wood.png"
@@ -73,7 +73,7 @@ public class CommonProxy {
     	GolemMaterial.register(
                 new GolemMaterial(
                         "STEEL",
-                        new String[]{"RT_MATSTUDSTEEL"},
+                        new String[]{"EG_MATSTUDSTEEL"},
                         new ResourceLocation(
                                 "engineeredgolems",
                                 "textures/entity/mat_steel.png"
@@ -96,7 +96,7 @@ public class CommonProxy {
     	
         ScanningManager.addScannableThing(
                 new ScanItem(
-                        "f_RT_TREATEDWOOD",
+                        "f_EG_TREATEDWOOD",
                         new ItemStack(
                         		IEContent.blockTreatedWood,
                                 1,

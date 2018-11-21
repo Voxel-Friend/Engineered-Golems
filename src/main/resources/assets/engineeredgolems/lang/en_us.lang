@@ -10,17 +10,17 @@ itemGroup.engineeredgolems.main=Engineered Golems
 tc.research_category.ENGINEERED_GOLEMS=Engineered Golems
 
 
-research.RT_MATSTUDSTEEL.title=Material Studies: Steel
+research.EG_MATSTUDSTEEL.title=Material Studies: Steel
 
-research.RT_MATSTUDSTEEL.stage.1=Steel is quite durable, more so than iron. It has a certain rigidity to it, similar to thaumium.
+research.EG_MATSTUDSTEEL.stage.1=Steel is quite durable, more so than iron. It has a certain rigidity to it, similar to thaumium.
 
-research.f_RT_STEEL.text=Examine Blocks of Steel
+research.f_EG_STEEL.text=Examine Blocks of Steel
 
-research.RT_MATSTUDTREATEDWOOD.title=Material Studies: Treated Wood
+research.EG_MATSTUDTREATEDWOOD.title=Material Studies: Treated Wood
 
-research.RT_MATSTUDTREATEDWOOD.stage.1=Treated Wood is of higher quality than normal wood. Due to its oil-laden nature, however, it is not as light.
+research.EG_MATSTUDTREATEDWOOD.stage.1=Treated Wood is of higher quality than normal wood. Due to its oil-laden nature, however, it is not as light.
 
-research.f_RT_TREATED_WOOD.text=Examine Treated Wood Planks
+research.f_EG_TREATED_WOOD.text=Examine Treated Wood Planks
 
 ##########################################################################
 
