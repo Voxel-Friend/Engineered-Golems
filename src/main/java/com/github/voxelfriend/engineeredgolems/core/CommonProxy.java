@@ -1,5 +1,6 @@
 package com.github.voxelfriend.engineeredgolems.core;
 
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -17,14 +18,19 @@ import thaumcraft.api.aspects.*;
 import thaumcraft.api.golems.*;
 import thaumcraft.api.golems.parts.*;
 import thaumcraft.api.items.*;
+
+import java.util.UUID;
+
 import blusunrize.immersiveengineering.common.IEContent;
 
 public class CommonProxy {
 	
 	static ResourceLocation defaultGroup = new ResourceLocation("");
+	final UUID voxel_friend_uuid = new UUID(59533531-c780-496b-94ad-a8d094b81521b); 
 	
 	public void preInit(FMLPreInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(this);
+        initGolems();
     }
 
 	public void init(FMLInitializationEvent event) {
@@ -38,10 +44,10 @@ public class CommonProxy {
     }
 	
 	public void postInit(FMLPostInitializationEvent event) {
-    	initResearch();
+		
     }
 	
-	protected void initResearch() {    	
+	protected void initGolems() {    	
     	ResearchCategory engineeredgolems = ResearchCategories.getResearchCategory("ENGINEERED_GOLEMS"); {
     	
         }
@@ -59,8 +65,8 @@ public class CommonProxy {
                         2,
                         1,
                         new ItemStack(
-                        		IEContent.blockTreatedWood,
-                                1,
+                        		IEContent.itemMaterial,
+                                3,
                                 0
                         ),
                         new ItemStack(
@@ -131,5 +137,21 @@ public class CommonProxy {
                         false
                 )
 );
+        
+        
+        ScanningManager.addScannableThing(
+        		new IScanThing() {
+        			
+                    @Override
+                    public boolean checkThing(EntityPlayer player, Object obj) {
+                        return obj.getClass().isInstance(player.getClass()) && ((EntityPlayer)obj).getUniqueID().equals(voxel_friend_uuid);                
+                    }
+
+                    @Override
+                    public String getResearchKey(EntityPlayer paramEntityPlayer, Object paramObject) {
+                        return "f_EG_VOXEL";
+                    }        
+               }
+        );
     }
 }
