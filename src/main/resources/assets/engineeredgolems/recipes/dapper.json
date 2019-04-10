@@ -1,0 +1,26 @@
+{
+	"result": {
+	    "type": "minecraft:item",
+		"item": "engineeredgolems:dapper",
+		"count": 3
+	},
+	"pattern": [
+		"WSW",
+		"WSW",
+		"WSW"
+	],
+	"type": "minecraft:crafting_shaped",
+	"key": {
+	    "S": {
+		    "type": "minecraft:item",
+		    "item": "immersiveengineering:metal",
+		    "data": 38
+	    },
+	    "W": {
+		    "type": "minecraft:item",
+		    "item": "minecraft:wool",
+			"data": 0
+
+	    }
+	}
+}

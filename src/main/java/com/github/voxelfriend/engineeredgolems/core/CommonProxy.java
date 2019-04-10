@@ -9,27 +9,33 @@ import net.minecraft.nbt.NBTTagByte;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.common.util.Constants.NBT;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import thaumcraft.api.*;
 import thaumcraft.api.research.*;
 import thaumcraft.api.aspects.*;
+import thaumcraft.api.capabilities.ThaumcraftCapabilities;
 import thaumcraft.api.golems.*;
 import thaumcraft.api.golems.parts.*;
 import thaumcraft.api.items.*;
 
 import java.util.UUID;
 
+import javax.swing.text.html.parser.Entity;
+
+import com.github.voxelfriend.engineeredgolems.common.items.ModItems;
+
 import blusunrize.immersiveengineering.common.IEContent;
 
 public class CommonProxy {
 	
 	static ResourceLocation defaultGroup = new ResourceLocation("");
-	final UUID voxel_friend_uuid = new UUID(59533531-c780-496b-94ad-a8d094b81521b); 
 	
 	public void preInit(FMLPreInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(this);
+        ModItems.init();
         initGolems();
     }
 
@@ -100,6 +106,29 @@ public class CommonProxy {
                         )
         );
     	
+    	GolemMaterial.register(
+                new GolemMaterial(
+                        "DAPPER",
+                        new String[]{"EG_DAPPER"},
+                        new ResourceLocation(
+                                "engineeredgolems",
+                                "textures/entity/mat_dapper.png"
+                        ),
+                        4934475,
+                        16,
+                        12,
+                        6,
+                        new ItemStack(
+                        		ModItems.DAPPER,
+                                1
+                        ),
+                        new ItemStack(
+                                ItemsTC.mechanismSimple
+                        ),
+                        new EnumGolemTrait[]{EnumGolemTrait.HEAVY, EnumGolemTrait.CLUMSY, EnumGolemTrait.BLASTPROOF, EnumGolemTrait.FIREPROOF}
+                        )
+        );
+    	
         ScanningManager.addScannableThing(
                 new ScanItem(
                         "f_EG_TREATEDWOOD",
@@ -107,6 +136,15 @@ public class CommonProxy {
                         		IEContent.blockTreatedWood,
                                 1,
                                 0
+                        )
+                )
+        );
+        ScanningManager.addScannableThing(
+                new ScanItem(
+                        "f_EG_DAPPER",
+                        new ItemStack(
+                        		ModItems.DAPPER,
+                                1
                         )
                 )
         );
@@ -136,22 +174,8 @@ public class CommonProxy {
                         IEContent.blockStorage.getStateFromMeta(8),
                         false
                 )
-);
-        
-        
-        ScanningManager.addScannableThing(
-        		new IScanThing() {
-        			
-                    @Override
-                    public boolean checkThing(EntityPlayer player, Object obj) {
-                        return obj.getClass().isInstance(player.getClass()) && ((EntityPlayer)obj).getUniqueID().equals(voxel_friend_uuid);                
-                    }
-
-                    @Override
-                    public String getResearchKey(EntityPlayer paramEntityPlayer, Object paramObject) {
-                        return "f_EG_VOXEL";
-                    }        
-               }
         );
+        
+        
     }
 }

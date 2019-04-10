@@ -11,7 +11,7 @@
 				{
 					"text": "research.EG_MATSTUDTREATEDWOOD.stage.1",
 					"required_research":["f_EG_TREATED_WOOD"]
-        }
+                }
 			]
 		},
 		{
@@ -25,7 +25,21 @@
 				{
 					"text": "research.EG_MATSTUDSTEEL.stage.1",
 					"required_research":["f_EG_STEEL"]
-        }
+                }
+			]
+		},
+		{
+			"key": "EG_DAPPER",
+			"name": "research.EG_DAPPER.title",
+			"icons": [ "engineeredgolems:textures/items/dapper.png" ],
+			"category": "ENGINEERED_GOLEMS", "location": [ 0, -2 ],
+			"parents": [ "EG_MATSTUDSTEEL"],
+			"meta": [ "ROUND", "HIDDEN" ],
+			"stages": [
+				{
+					"text": "research.EG_DAPPER.stage.1",
+					"required_research":["f_EG_DAPPER"]
+                }
 			]
 		}
 
