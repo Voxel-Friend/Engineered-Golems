@@ -12,9 +12,8 @@
 	"type": "minecraft:crafting_shaped",
 	"key": {
 	    "S": {
-		    "type": "minecraft:item",
-		    "item": "immersiveengineering:metal",
-		    "data": 38
+		    "type": "forge:ore_dict",
+		    "ore": "plateSteel"
 	    },
 	    "W": {
 		    "type": "minecraft:item",
