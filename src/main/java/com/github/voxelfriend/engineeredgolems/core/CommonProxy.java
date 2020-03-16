@@ -36,7 +36,6 @@ public class CommonProxy {
 	public void preInit(FMLPreInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(this);
         ModItems.init();
-        initGolems();
     }
 
 	public void init(FMLInitializationEvent event) {
@@ -47,7 +46,8 @@ public class CommonProxy {
                 new ResourceLocation("thaumcraft", "textures/gui/gui_research_back_over.png"));
 		
 		ThaumcraftApi.registerResearchLocation(new ResourceLocation(EngineeredGolems.MODID, "research/engineeredgolems"));
-    }
+		initGolems();
+	}
 	
 	public void postInit(FMLPostInitializationEvent event) {
 		
